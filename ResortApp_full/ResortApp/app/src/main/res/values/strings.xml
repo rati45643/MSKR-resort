@@ -3,5 +3,5 @@
     <string name="app_name">MSKR Resort</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="default_web_client_id">971063974278-4svqptvh87icv210arr5uq1ulvdp137e.apps.googleusercontent.com</string>
+    <string name="default_web_client_id">your_web_client_id</string>
 </resources>
