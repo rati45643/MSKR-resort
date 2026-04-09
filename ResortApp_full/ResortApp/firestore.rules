@@ -1,0 +1,83 @@
+// ============================================================
+// Firebase Firestore Security Rules
+// Copy-paste into Firebase Console → Firestore → Rules
+// ============================================================
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper functions ──────────────────────────────────────
+    function isAuth() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isAuth() && request.auth.uid == uid;
+    }
+
+    function getUserRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isUser()    { return isAuth() && getUserRole() == 'user';    }
+    function isKitchen() { return isAuth() && getUserRole() == 'kitchen'; }
+    function isRoom()    { return isAuth() && getUserRole() == 'room';    }
+    function isStaff()   { return isKitchen() || isRoom();                }
+
+    // ── Users collection ──────────────────────────────────────
+    match /users/{uid} {
+      allow read:   if isOwner(uid) || isStaff();
+      allow create: if isOwner(uid);
+      allow update: if isOwner(uid);
+      allow delete: if false;
+    }
+
+    // ── Resort info (public read) ─────────────────────────────
+    match /resort_info/{docId} {
+      allow read:  if true;
+      allow write: if false; // Admin only via Firebase Console
+    }
+
+    // ── Food menu (public read for authenticated users) ───────
+    match /food_menu/{itemId} {
+      allow read:  if isAuth();
+      allow write: if false; // Admin only
+    }
+
+    // ── Room bookings ─────────────────────────────────────────
+    match /room_bookings/{bookingId} {
+      // Guests can create and read their own bookings
+      allow create: if isAuth() && request.resource.data.userId == request.auth.uid;
+      allow read:   if isAuth() && (
+                      resource.data.userId == request.auth.uid || isRoom()
+                    );
+      // Room staff can update status only
+      allow update: if isRoom() && request.resource.data.diff(resource.data).affectedKeys()
+                      .hasOnly(['status']);
+      allow delete: if false;
+    }
+
+    // ── Food orders ───────────────────────────────────────────
+    match /food_orders/{orderId} {
+      allow create: if isAuth() && request.resource.data.userId == request.auth.uid;
+      allow read:   if isAuth() && (
+                      resource.data.userId == request.auth.uid || isKitchen()
+                    );
+      // Kitchen staff can update status only
+      allow update: if isKitchen() && request.resource.data.diff(resource.data).affectedKeys()
+                      .hasOnly(['status']);
+      allow delete: if false;
+    }
+
+    // ── Issues ────────────────────────────────────────────────
+    match /issues/{issueId} {
+      allow create: if isAuth() && request.resource.data.userId == request.auth.uid;
+      allow read:   if isAuth() && (
+                      resource.data.userId == request.auth.uid || isStaff()
+                    );
+      allow update: if isStaff();
+      allow delete: if false;
+    }
+  }
+}

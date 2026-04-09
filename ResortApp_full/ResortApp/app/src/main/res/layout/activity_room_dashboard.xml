@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_room_department">
+
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2196F3"
+        android:title="Room Department Dashboard"
+        android:titleTextColor="#FFFFFF"/>
+
+    <!-- Staff + Logout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStaffName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Staff"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Department"
+                android:textSize="13sp"
+                android:textColor="#757575"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Stats -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tvTotalBookings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total: 0"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvConfirmedCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirmed: 0"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvCheckedInCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Checked In: 0"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvCheckedOutCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Checked Out: 0"
+            android:gravity="center"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <!-- Revenue -->
+    <TextView
+        android:id="@+id/tvTotalRevenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Revenue: ₹0"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#E3F2FD"
+        android:textColor="#0D47A1"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <!-- Filters -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/btnFilterAll"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="All"/>
+
+        <Button
+            android:id="@+id/btnFilterConfirmed"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="Confirmed"/>
+
+        <Button
+            android:id="@+id/btnFilterCheckedIn"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="In"/>
+
+        <Button
+            android:id="@+id/btnFilterCheckedOut"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="Out"/>
+    </LinearLayout>
+
+    <!-- Progress -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <!-- Empty -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No bookings found"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:padding="20dp"/>
+
+    <!-- Recycler -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBookings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

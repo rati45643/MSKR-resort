@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable_bg_food_image_rounded.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable\\bg_food_image_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable_ic_google.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable\\ic_google.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_profile.jpeg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_profile.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_issues.jpg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_issues.jpg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable_circle_button_bg.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable\\circle_button_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_profile1.jpg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_profile1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_item_food.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\item_food.xml"
+    },
+    {
+        "merged": "com.resort.app-merged_res-59:/drawable-nodpi_ic_resort.jpg.flat",
+        "source": "com.resort.app-main-61:/drawable-nodpi/ic_resort.jpg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_room_department.jpg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_room_department.jpg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_item_booking.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\item_booking.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_dialog_quantity.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\dialog_quantity.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\menu\\nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_resort.jpg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_resort.jpg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_ic_launcher_background.jpeg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\ic_launcher_background.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_activity_kitchen_dashboard.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_kitchen_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_welcome.jpeg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_welcome.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_fragment_issues.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_issues.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_food.jpeg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_food.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_fragment_room_booking.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_room_booking.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_fragment_kitchen.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_kitchen.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_nav_header.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_item_order.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\item_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_home.jpg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_home.jpg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable-nodpi_bg_kitchen.jpeg.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable-nodpi\\bg_kitchen.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\layout_activity_room_dashboard.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_room_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-merged_res-59:\\drawable_spinner_background.xml.flat",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\drawable\\spinner_background.xml"
+    }
+]

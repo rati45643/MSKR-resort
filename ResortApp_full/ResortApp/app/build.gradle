@@ -1,0 +1,105 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.resort.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.resort.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    // Required: JavaMail puts non-standard files in META-INF
+    packaging {
+        resources {
+            excludes += [
+                'META-INF/NOTICE.md',
+                'META-INF/LICENSE.md',
+                'META-INF/NOTICE',
+                'META-INF/LICENSE',
+                'META-INF/DEPENDENCIES',
+                'META-INF/*.kotlin_module'
+            ]
+        }
+    }
+}
+
+dependencies {
+    // ─── Core Android ────────────────────────────────────────────────────────
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // ─── Material Design ─────────────────────────────────────────────────────
+    implementation 'com.google.android.material:material:1.11.0'
+
+    // ─── Layout / Navigation ─────────────────────────────────────────────────
+    implementation 'androidx.drawerlayout:drawerlayout:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.6'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.6'
+
+    // ─── Lifecycle + Coroutines ──────────────────────────────────────────────
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+
+    // ─── Firebase BOM (manages all Firebase library versions) ────────────────
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+    implementation 'com.google.firebase:firebase-auth-ktx'        // Authentication
+    implementation 'com.google.firebase:firebase-firestore-ktx'   // Database
+    implementation 'com.google.firebase:firebase-messaging-ktx'   // Push notifications
+    implementation 'com.google.firebase:firebase-storage-ktx'     // File storage
+
+    // ─── Google Sign-In ──────────────────────────────────────────────────────
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+    // ─── JavaMail for Android (booking/order confirmation emails) ────────────
+    implementation 'com.sun.mail:android-mail:1.6.7'
+    implementation 'com.sun.mail:android-activation:1.6.7'
+
+    // ─── Glide (image loading) ───────────────────────────────────────────────
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // ─── CircleImageView (profile photos) ───────────────────────────────────
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.github.prolificinteractive:material-calendarview:1.4.3'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+}

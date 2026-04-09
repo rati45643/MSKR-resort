@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "971063974278",
+    "project_id": "mskr-resort",
+    "storage_bucket": "mskr-resort.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971063974278:android:65cce261f48b7b7e9f3407",
+        "android_client_info": {
+          "package_name": "com.resort.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971063974278-rlu08d7du2chk75oiua4tv5fq58drlrg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.resort.app",
+            "certificate_hash": "bad86593ffae4c9d54288d5811f3f22a8bc229dd"
+          }
+        },
+        {
+          "client_id": "971063974278-4svqptvh87icv210arr5uq1ulvdp137e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAbxpgLoijAYg7bKfUPXZd7q5qrbg8l-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971063974278-4svqptvh87icv210arr5uq1ulvdp137e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

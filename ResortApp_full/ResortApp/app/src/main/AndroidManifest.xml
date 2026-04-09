@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_resort"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_resort"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ResortApp">
+
+        <!-- Welcome/Splash -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ResortApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auth Activities -->
+        <activity android:name=".activities.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ResortApp.NoActionBar"/>
+        <activity android:name=".activities.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ResortApp.NoActionBar"/>
+        <activity android:name=".activities.ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ResortApp.NoActionBar"/>
+
+        <!-- Main User Activity -->
+        <activity android:name=".activities.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ResortApp.NoActionBar"/>
+
+        <!-- Department Activities -->
+        <activity android:name=".activities.KitchenDashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ResortApp.NoActionBar"/>
+        <activity android:name=".activities.RoomDashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ResortApp.NoActionBar"/>
+
+    </application>
+</manifest>

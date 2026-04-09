@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHome"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/navRoomBooking"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Room Booking"/>
+
+        <item
+            android:id="@+id/navKitchen"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Kitchen Orders"/>
+
+        <item
+            android:id="@+id/navIssues"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="Report Issue"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/navProfile"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Profile Settings"/>
+
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="Logout"/>
+    </group>
+
+</menu>

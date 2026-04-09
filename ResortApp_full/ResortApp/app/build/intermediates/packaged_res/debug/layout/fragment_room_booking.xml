@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_issues">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Progress -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛏️ Book a Room"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Low: Bedroom + Bathroom + AC | Medium: Bedroom + Hall + AC | High: 2 Bedrooms + Hall + AC + TV"
+            android:textSize="13sp"
+            android:textColor="#DDDDDD"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- GUEST NAME -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Guest Name"
+            android:layout_marginBottom="20dp"
+            app:hintTextColor="#FFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGuestName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BBBBBB"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- NUMBER OF ROOMS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Rooms"
+            android:textColor="#FFFFFF"/>
+
+        <Spinner
+            android:id="@+id/spinnerRooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#444444"
+            android:popupBackground="#FFFFFF"/> <!-- ✅ FIX -->
+
+        <!-- ROOM SELECTORS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Room Numbers"
+            android:textColor="#FFA500"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/layoutRoomSelectors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"/>
+
+        <!-- BUDGET -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Range"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low ₹3000"
+                style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium ₹6000"
+                android:checked="true"
+                style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High ₹12000"
+                style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- PRICE -->
+        <TextView
+            android:id="@+id/tvBaseRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹6000 / night"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total ₹6000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00E676"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- DATE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Stay Dates"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnSelectDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Dates"
+            android:layout_marginTop="8dp"/>
+
+        <!-- BOOK -->
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:backgroundTint="#00C853"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"/>
+
+        <!-- BOOKING HISTORY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Details"
+            android:textColor="#FFA500"
+            android:layout_marginTop="20dp"/>
+
+        <!-- ❌ OLD TEXT REMOVED -->
+
+        <!-- ✅ NEW DYNAMIC CONTAINER -->
+        <LinearLayout
+            android:id="@+id/layoutBookingHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

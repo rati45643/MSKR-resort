@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_issues">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Staff greeting + Logout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorSurface">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStaffName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Staff"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍳 Kitchen Department"
+                android:textSize="13sp"
+                android:textColor="@color/textSecondary" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRevenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revenue"
+            android:textSize="13sp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="13sp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Summary stats -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@color/colorSurface"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvTotalOrders"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Total: 0"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/textSecondary" />
+
+            <TextView
+                android:id="@+id/tvPlacedCount"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Placed: 0"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/status_placed" />
+
+            <TextView
+                android:id="@+id/tvPreparingCount"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Preparing: 0"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/status_preparing" />
+
+            <TextView
+                android:id="@+id/tvDeliveredCount"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Delivered: 0"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/status_delivered" />
+
+            <TextView
+                android:id="@+id/tvPaymentCompletedCount"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Payment Completed: 0"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Filter tabs -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@color/colorSurface"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/tabAll"
+                style="@style/ResortButton.Outlined"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:text="All"
+                android:textSize="12sp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/tabPlaced"
+                style="@style/ResortButton.Outlined"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:text="Placed"
+                android:textSize="12sp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/tabPreparing"
+                style="@style/ResortButton.Outlined"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:text="Preparing"
+                android:textSize="12sp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/tabDelivered"
+                style="@style/ResortButton.Outlined"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:text="Delivered"
+                android:textSize="12sp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/tabPaymentCompleted"
+                style="@style/ResortButton.Outlined"
+                android:layout_width="170dp"
+                android:layout_height="36dp"
+                android:text="Payment Done"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No orders found"
+        android:textSize="16sp"
+        android:textColor="@color/textSecondary"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\nav_header.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\item_order.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\item_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\fragment_issues.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_issues.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\dialog_quantity.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\dialog_quantity.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\item_booking.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\item_booking.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\activity_room_dashboard.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_room_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\activity_kitchen_dashboard.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_kitchen_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\fragment_room_booking.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_room_booking.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\fragment_kitchen.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\fragment_kitchen.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-mergeDebugResources-58:\\layout\\item_food.xml",
+        "source": "C:\\Users\\krish\\.gradle\\daemon\\8.2\\com.resort.app-main-61:\\layout\\item_food.xml"
+    },
+    {
+        "merged": "com.resort.app-mergeDebugResources-58:/layout/activity_splash.xml",
+        "source": "com.resort.app-main-61:/layout/activity_splash.xml"
+    }
+]

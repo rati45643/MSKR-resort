@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary Theme -->
+    <color name="colorPrimary">#1B5E20</color>
+    <color name="colorPrimaryDark">#003300</color>
+    <color name="colorPrimaryLight">#A5D6A7</color>
+    <color name="colorAccent">#FF8F00</color>
+
+    <!-- Backgrounds -->
+    <color name="colorBackground">#F9FBF7</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="cardBackground">#FFFFFF</color>
+
+    <!-- Text Colors (🔥 IMPORTANT FIX) -->
+    <color name="textPrimary">#000000</color>   <!-- MAIN TEXT -->
+    <color name="textSecondary">#616161</color> <!-- SUB TEXT -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- TEXT ON GREEN -->
+
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Status colors -->
+    <color name="status_placed">#FFA000</color>
+    <color name="status_preparing">#1976D2</color>
+    <color name="status_delivered">#388E3C</color>
+    <color name="status_confirmed">#388E3C</color>
+    <color name="status_cancelled">#D32F2F</color>
+
+    <!-- Veg/NonVeg -->
+    <color name="veg_green">#2E7D32</color>
+    <color name="nonveg_red">#C62828</color>
+
+    <!-- Extra -->
+    <color name="gold">#FFD700</color>
+
+</resources>

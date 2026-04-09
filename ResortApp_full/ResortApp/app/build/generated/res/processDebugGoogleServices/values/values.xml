@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">971063974278-4svqptvh87icv210arr5uq1ulvdp137e.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">971063974278</string>
+    <string name="google_api_key" translatable="false">AIzaSyCAbxpgLoijAYg7bKfUPXZd7q5qrbg8l-4</string>
+    <string name="google_app_id" translatable="false">1:971063974278:android:65cce261f48b7b7e9f3407</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCAbxpgLoijAYg7bKfUPXZd7q5qrbg8l-4</string>
+    <string name="google_storage_bucket" translatable="false">mskr-resort.firebasestorage.app</string>
+    <string name="project_id" translatable="false">mskr-resort</string>
+</resources>
